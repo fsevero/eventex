@@ -2,6 +2,8 @@
 
 Sistema de Eventos encomendado pela Morena.
 
+[![Build Status](https://travis-ci.org/fsevero/eventex.svg)](https://travis-ci.org/fsevero/eventex)
+
 ## Como desenvolver?
 
 1. Clone o repositório
