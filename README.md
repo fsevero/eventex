@@ -3,6 +3,7 @@
 Sistema de Eventos encomendado pela Morena.
 
 [![Build Status](https://travis-ci.org/fsevero/eventex.svg)](https://travis-ci.org/fsevero/eventex)
+[![Code Climate](https://codeclimate.com/github/fsevero/eventex/badges/gpa.svg)](https://codeclimate.com/github/fsevero/eventex)
 
 ## Como desenvolver?
 
