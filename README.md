@@ -5,7 +5,6 @@ Sistema de Eventos encomendado pela Morena.
 [![Build Status](https://travis-ci.org/fsevero/eventex.svg)](https://travis-ci.org/fsevero/eventex)
 [![Code Climate](https://codeclimate.com/github/fsevero/eventex/badges/gpa.svg)](https://codeclimate.com/github/fsevero/eventex)
 [![codecov.io](https://codecov.io/github/fsevero/eventex/coverage.svg?branch=master)](https://codecov.io/github/fsevero/eventex?branch=master)
-[![Coverage Status](https://coveralls.io/repos/fsevero/eventex/badge.svg?branch=master&service=github)](https://coveralls.io/github/fsevero/eventex?branch=master)
 
 ## Como desenvolver?
 
