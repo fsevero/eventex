@@ -8,3 +8,4 @@ __pycache__
 notes.txt
 staticfiles
 .coverage
+.ipynb_checkpoints/
