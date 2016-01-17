@@ -1,6 +1,8 @@
 from django.contrib import admin
 from django.utils.timezone import now
 
+from attributetools import attribute
+
 from eventex.subscriptions.models import Subscription
 
 
@@ -13,12 +15,12 @@ class SubscriptionModelAdmin(admin.ModelAdmin):
 
     actions = ['mark_as_paid']
 
+    @attribute(short_description='inscrito hoje?')
+    @attribute(boolean=True)
     def subscribed_today(self, obj):
         return obj.created_at.date() == now().date()
 
-    subscribed_today.short_description = 'inscrito hoje?'
-    subscribed_today.boolean = True
-
+    @attribute(short_description='Marcar como pago')
     def mark_as_paid(self, request, queryset):
         count = queryset.update(paid=True)
 
@@ -28,7 +30,5 @@ class SubscriptionModelAdmin(admin.ModelAdmin):
             msg = '{} inscrições foram marcadas como pagas.'
 
         self.message_user(request, msg.format(count))
-
-    mark_as_paid.short_description = 'Marcar como pago'
 
 admin.site.register(Subscription, SubscriptionModelAdmin)
